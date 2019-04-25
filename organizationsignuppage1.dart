@@ -65,7 +65,8 @@ class _OrganizationSignUpPageState extends State<OrganizationSignUpPage> {
     //the name becomes a representation of the user
     //As an idea for, combine the first name and last name 
     final String documentName = _formData['name'];
-    Firestore.instance.collection('Organizations').document(documentName).setData({'Organization name': _formData['name']});
+    //Use the first line to connect to firebase
+    //Firestore.instance.collection('Organizations').document(documentName).setData({'Organization name': _formData['name']});
     //Firestore.instance.collection('AnonymousImages').document('Images').setData({'Images': Image.file('/Users/julianashihadeh/Desktop/SeniorDesign/New_App/app_sample_with_database_intro/assets/food.jpg')});
     //Navigator.pushReplacementNamed(context, '/organizationsignuppage2');
 
