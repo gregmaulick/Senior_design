@@ -77,6 +77,7 @@ class _SignUpPage3State extends State<SignUpPage3> {
     //  }
     //);
 
+    //CHANGE THIS PATH TO GO TO THE CAMERA PAGE 
     Navigator.pushReplacementNamed(context, '/results');
   }
 
