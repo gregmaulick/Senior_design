@@ -77,12 +77,13 @@ class _OrganizationSignUpPage3State extends State<OrganizationSignUpPage3> {
     //login(_formData['email'], _formData['password']);
     print(_formData);
     //Need a way to specify the user to update the data for
-    Firestore.instance.collection('Organizations').document(widget.user).updateData(
-      {
-          'Generic_Password': _formData['password'], 
-      }
-    );
+    //Firestore.instance.collection('Organizations').document(widget.user).updateData(
+    //  {
+    //      'Generic_Password': _formData['password'], 
+    //  }
+    //);
 
+    //CHANGE PATH HERE TO GO THE CAMERA PAGE
     Navigator.pushReplacementNamed(context, '/results');
 
   }
