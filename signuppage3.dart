@@ -70,12 +70,12 @@ class _SignUpPage3State extends State<SignUpPage3> {
     //login(_formData['email'], _formData['password']);
     print(_formData);
     //Need a way to specify the user to update the data for
-    Firestore.instance.collection('Users').document(widget.user).updateData(
-      {
-          'Generic_Password': _formData['password'], 
+    //Firestore.instance.collection('Users').document(widget.user).updateData(
+    //  {
+    //      'Generic_Password': _formData['password'], 
          
-      }
-    );
+    //  }
+    //);
 
     Navigator.pushReplacementNamed(context, '/results');
   }
