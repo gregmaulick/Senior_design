@@ -115,14 +115,14 @@ class _OrganizationSignUpPage2State extends State<OrganizationSignUpPage2> {
     print(_formData);
     //Need a way to specify the user to update the data for
     //pass name of user to be doc name
-    Firestore.instance.collection('Organizations').document(widget.user).updateData(
-        {
-          'City': _formData['city'], 
-          'State': _formData['state'],
-          'E-Mail': _formData['email'],
-          'Phone Number': _formData['phonenumber']
-        }
-    );
+    //Firestore.instance.collection('Organizations').document(widget.user).updateData(
+    //    {
+    //      'City': _formData['city'], 
+    //      'State': _formData['state'],
+    //      'E-Mail': _formData['email'],
+    //      'Phone Number': _formData['phonenumber']
+    //    }
+    //);
 
    //Navigator.pushReplacementNamed(context, '/organizationsignuppage3');
 
