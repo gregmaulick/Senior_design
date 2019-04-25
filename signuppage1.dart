@@ -77,7 +77,8 @@ class _SignUpPageState extends State<SignUpPage> {
     //As an idea for, combine the first name and last name 
     final String userName = _formData['f_name'] + _formData['l_name'];
     print(userName);
-    Firestore.instance.collection('Users').document(userName).setData({'First Name': _formData['f_name'], 'Last Name':_formData['l_name']});
+    //First line of code is the correct firesbase connector
+    //Firestore.instance.collection('Users').document(userName).setData({'First Name': _formData['f_name'], 'Last Name':_formData['l_name']});
     //Firestore.instance.collection('AnonymousImages').document('Images').setData({'Images': Image.file('/Users/julianashihadeh/Desktop/SeniorDesign/New_App/app_sample_with_database_intro/assets/food.jpg')});
     //Navigator.pushReplacementNamed(context, '/signuppage2');
 
